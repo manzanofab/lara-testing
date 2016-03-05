@@ -7,6 +7,9 @@ use App\Http\Controllers\Controller;
 use App\User;
 use DB;  //I NEED THIS TO QUERY DATABASE
 use Mail; //USE THIS TO SEND EMAILS
+use App\Http\Controllers\Schema;
+
+
 
 class SalesforceUserController extends Controller
 {
