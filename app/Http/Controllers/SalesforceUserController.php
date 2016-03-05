@@ -27,6 +27,9 @@ class SalesforceUserController extends Controller
     	var_dump($columns);
     	echo "<br />";
     	var_dump($columns1);
+    	echo "<br />";
+    	$tables = DB::select('SHOW TABLES');
+    	var_dump($tables);
     }
 
     public function store(Request $request) {
