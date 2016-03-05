@@ -21,7 +21,7 @@ class SalesforceUserController extends Controller
     	// $user = DB::table('users')->where('email', $email)->first();
     	$users = DB::table('users')->get();
 
-    	var_dump($users);
+    	// var_dump($users);
     }
 
     public function store(Request $request) {
