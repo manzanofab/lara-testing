@@ -21,9 +21,12 @@ class SalesforceUserController extends Controller
     	// $user = DB::table('users')->where('email', $email)->first();
     	$users = DB::table('users')->get();
     	$table = 'users';
-		$columns = DB::getSchemaBuilder()->getColumnListing('table');
+		$columns = DB::getSchemaBuilder()->getColumnListing('users');
+		$columns1 = DB::getSchemaBuilder()->getColumnListing('salesforce.contact');
 
     	var_dump($columns);
+    	echo "<br />";
+    	var_dump($columns1);
     }
 
     public function store(Request $request) {
