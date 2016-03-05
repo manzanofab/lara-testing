@@ -20,8 +20,9 @@ class SalesforceUserController extends Controller
     	//SHOW COLUMNS FROM my_table;
     	// $user = DB::table('users')->where('email', $email)->first();
     	$users = DB::table('users')->get();
-
-    	// var_dump($users);
+    	$table = 'users';
+    	$columns = Schema::getColumnListing($table);
+    	var_dump($columns);
     }
 
     public function store(Request $request) {
