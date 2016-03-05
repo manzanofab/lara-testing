@@ -112,15 +112,6 @@ class SalesforceUserController extends Controller
 	}
 
 	public static function sendEmail(){
-		/*
-		$password = 'abc123';
-		$user = User::findOrFail(1);
-		Mail::send('emails.welcome', ['user' => $user], function ($m) use ($user) {
-            $m->from('postmaster@fabianmanzano.info', 'Your Application');
-
-            $m->to('manzanofab@hotmail.com')->subject('Your Reminder!');
-        });
-        */
         $data = array();
         Mail::send('home', $data, function($message) {
 		    $message->to('manzanofab@hotmail.com','Codelution Staff')->subject('Welcome');
