@@ -23,6 +23,8 @@
 | kernel and includes session state, CSRF protection, and more.
 |
 */
+Route::get('/sf','SalesforceUserController@sf');
+
 Route::get('/manzaSend','SalesforceUserController@sendEmail');
 
 

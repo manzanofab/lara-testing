@@ -16,6 +16,10 @@ class SalesforceUserController extends Controller
     	return $string;
     }
 
+    public function sf(){
+    	return 'sf';
+    }
+
     public function store(Request $request) {
 		$name      = $request->input('name');
 		$email     = $request->input('email');
