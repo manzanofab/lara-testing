@@ -28,8 +28,9 @@ class SalesforceUserController extends Controller
     	echo "<br />";
     	var_dump($columns1);
     	echo "<br />";
-    	$tables = DB::select('SHOW TABLES');
-    	// var_dump($tables);
+    	$tableNames = Schema::getConnection()->getDoctrineSchemaManager()->listTableNames();
+    	
+    	var_dump($tableNames);
     }
 
     public function store(Request $request) {
