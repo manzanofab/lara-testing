@@ -33,7 +33,7 @@ class SalesforceUserController extends Controller
     	echo "<br />";
     	var_dump($columns3);
     	echo "<br />";
-    	echo "<h1>PRESENTATION TABLE NOT WORKING i tried manza__Presentation__c not trying Presentation__c</h1>"
+    	echo "<h1>PRESENTATION TABLE NOT WORKING i tried manza__Presentation__c not trying Presentation__c</h1>";
     }
 
     public function store(Request $request) {
