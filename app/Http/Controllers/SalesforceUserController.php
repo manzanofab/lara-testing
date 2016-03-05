@@ -20,16 +20,11 @@ class SalesforceUserController extends Controller
     	//SHOW COLUMNS FROM my_table;
     	// $user = DB::table('users')->where('email', $email)->first();
 
-		$columns = DB::getSchemaBuilder()->getColumnListing('users');
+		// $columns = DB::getSchemaBuilder()->getColumnListing('users');
 		$columns1 = DB::getSchemaBuilder()->getColumnListing('contact');
 
-    	var_dump($columns);
-    	echo "<br />";
     	var_dump($columns1);
     	echo "<br />";
-    	$pdo = DB::getSchemaBuilder();
-
-    	var_dump($pdo);
     }
 
     public function store(Request $request) {
