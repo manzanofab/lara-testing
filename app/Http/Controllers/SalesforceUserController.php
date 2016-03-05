@@ -22,8 +22,16 @@ class SalesforceUserController extends Controller
 
 		// $columns = DB::getSchemaBuilder()->getColumnListing('users');
 		$columns1 = DB::getSchemaBuilder()->getColumnListing('contact');
+		$columns2 = DB::getSchemaBuilder()->getColumnListing('account');
+		$columns3 = DB::getSchemaBuilder()->getColumnListing('manza__Presentation__c');
 
     	var_dump($columns1);
+    	echo "<br />";
+    	echo "<br />";
+    	var_dump($columns2);
+    	echo "<br />";
+    	echo "<br />";
+    	var_dump($columns3);
     	echo "<br />";
     }
 
