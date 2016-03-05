@@ -7,9 +7,6 @@ use App\Http\Controllers\Controller;
 use App\User;
 use DB;  //I NEED THIS TO QUERY DATABASE
 use Mail; //USE THIS TO SEND EMAILS
-use App\Http\Controllers\Schema;
-
-
 
 class SalesforceUserController extends Controller
 {
@@ -24,7 +21,8 @@ class SalesforceUserController extends Controller
     	// $user = DB::table('users')->where('email', $email)->first();
     	$users = DB::table('users')->get();
     	$table = 'users';
-    	$columns = Schema::getColumnListing($table);
+		$columns = DB::getSchemaBuilder()->getColumnListing('table');
+
     	var_dump($columns);
     }
 
