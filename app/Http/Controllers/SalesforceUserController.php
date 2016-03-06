@@ -112,10 +112,10 @@ class SalesforceUserController extends Controller
 	}
 
 	public static function sendEmail(){
-        $data = array();
-        Mail::send('home', $data, function($message) {
-		    $message->to('manzanofab@hotmail.com','Codelution Staff')->subject('Welcome');
-		});
+  //       $data = array();
+  //       Mail::send('home', $data, function($message) {
+		//     $message->to('manzanofab@hotmail.com','Codelution Staff')->subject('Welcome');
+		// });
         return 'hello baby';
         // return view('emails.welcome');
 	}
